@@ -1,0 +1,137 @@
+{
+    "dataset": "network_data.csv",
+    "dataset_rows": 10,
+    "feature_count": 7,
+    "class_names": [
+        "BENIGN",
+        "DoS",
+        "PortScan"
+    ],
+    "training_records": 7,
+    "testing_records": 3,
+    "best_model": "Random Forest",
+    "models": {
+        "Random Forest": {
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "confusion_matrix": [
+                [
+                    1,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    1,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    1
+                ]
+            ],
+            "classification_report": {
+                "BENIGN": {
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "f1-score": 1.0,
+                    "support": 1.0
+                },
+                "DoS": {
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "f1-score": 1.0,
+                    "support": 1.0
+                },
+                "PortScan": {
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "f1-score": 1.0,
+                    "support": 1.0
+                },
+                "accuracy": 1.0,
+                "macro avg": {
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "f1-score": 1.0,
+                    "support": 3.0
+                },
+                "weighted avg": {
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "f1-score": 1.0,
+                    "support": 3.0
+                }
+            }
+        },
+        "XGBoost": {
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "confusion_matrix": [
+                [
+                    1,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    1,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    1
+                ]
+            ],
+            "classification_report": {
+                "BENIGN": {
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "f1-score": 1.0,
+                    "support": 1.0
+                },
+                "DoS": {
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "f1-score": 1.0,
+                    "support": 1.0
+                },
+                "PortScan": {
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "f1-score": 1.0,
+                    "support": 1.0
+                },
+                "accuracy": 1.0,
+                "macro avg": {
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "f1-score": 1.0,
+                    "support": 3.0
+                },
+                "weighted avg": {
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "f1-score": 1.0,
+                    "support": 3.0
+                }
+            }
+        }
+    },
+    "feature_importance": {
+        "Flow_Duration": 0.24294082491582494,
+        "Total_Fwd_Packets": 0.21405303030303027,
+        "Total_Backward_Packets": 0.15862752525252524,
+        "Flow_Bytes_s": 0.15537878787878784,
+        "Flow_Packets_s": 0.15463636363636366,
+        "Destination_Port": 0.07436346801346799,
+        "Protocol": 0.0
+    },
+    "warning": "Metrics from a small sample dataset are only a workflow demonstration, not evidence of real-world detection performance."
+}
